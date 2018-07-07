@@ -9375,7 +9375,7 @@ a.text-dark:hover, a.text-dark:focus {
 .dropdown-menu {
   min-width: 200px;
   border-width: 3px 0 0;
-  border-color: #59287a;
+  border-color: transparent;
   box-shadow: 0 0.4rem 2.2rem 0 rgba(27, 30, 36, 0.1);
 }
 
