@@ -6,6 +6,8 @@
 /*------------------------------------
   Default Styles
 ------------------------------------*/
+
+
 html {
   font-size: 1rem;
 }
@@ -964,24 +966,24 @@ h1, h2, h3, h4, h5, h6 {
 ------------------------------------*/
 @media (max-width: 767px) {
   .navbar-expand-sm.fixed-top {
-    background-color: rgba(27, 30, 36, 0.3);
+    background-color: rgba(0,0,64,0.5);;
   }
 }
 
 @media (max-width: 991px) {
   .navbar-expand-md.fixed-top {
-    background-color: rgba(27, 30, 36, 0.3);
+    background-color: rgba(0,0,64,0.5);;
   }
 }
 
 @media (max-width: 1199px) {
   .navbar-expand-lg.fixed-top {
-    background-color: rgba(27, 30, 36, 0.3);
+    background-color: rgba(0,0,64,0.5);;
   }
 }
 
 .navbar-bg-onscroll.fixed-top {
-  background-color: #672e8d;
+  background-color: rgba(0,0,64,0.5);;
   transition: all .3s ease-out;
 }
 
@@ -1285,3 +1287,62 @@ h1, h2, h3, h4, h5, h6 {
 .u-opacity-6 {
   opacity: .6;
 }
+
+/* Navbar styles */
+.my-navbar {
+	background-color: rgba(0,0,64,0.5);
+	display: flex !important;
+	flex-direction: 'row' !important;
+	justify-content: space-evenly !important;
+	align-items: center !important;
+	padding: .75rem;
+	text-align: center;
+	font-family: 'Proxima Nova', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+  	color:white !important
+}
+
+.navbarItems {
+	color:white !important;
+	font-size: 1.2rem!important;
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-family: "righteous", sans-serif;
+	text-align: center;
+}
+
+.navbarItems:hover {
+	border-style: solid !important;
+	border-width: 5px !important;
+	padding-top:11px;
+    padding-bottom:11px;
+}
+
+.navbarBrand {
+	color:white !important;
+	font-size: 3.0rem !important;
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-family: "righteous",sans-serif;
+	text-align: center;
+}
+
+.dropdown-menu {
+	background-color: #ffc107;
+  	color:white;
+}
+
+.dropdown:hover>.dropdown-menu {
+	background-color: #ffc107;
+  	color:white;
+}
+
+.dropdown-item:hover {
+  background-color: #cc9a05;
+}
+
