@@ -694,20 +694,20 @@ h1, h2, h3, h4, h5, h6 {
 ------------------------------------*/
 /* primary */
 .u-icon-primary {
-  color: color-yiq(#59287a);
-  background-color: #59287a;
-  border-color: #59287a;
+  color: color-yiq(#000066);
+  background-color: #000066;
+  border-color: #000066;
 }
 
 .u-icon-primary[href]:hover {
-  color: color-yiq(#441f5d);
-  background-color: #441f5d;
-  border-color: #3d1b54;
+  color: color-yiq(#000066);
+  background-color: #000066;
+  border-color: #000066;
 }
 
 .u-icon-primary.disabled, .u-icon-primary:disabled {
-  background-color: #59287a;
-  border-color: #59287a;
+  background-color: #000066;
+  border-color: #000066;
 }
 
 /* secondary */
