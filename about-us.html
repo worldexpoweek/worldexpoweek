@@ -34,54 +34,41 @@
     <!-- Header -->
     <header>
       <!-- Navbar -->
-      <nav class="js-navbar-scroll navbar fixed-top navbar-expand-lg navbar-dark">
+      <nav class="js-navbar-scroll fixed-top navbar-expand-lg navbar-transparent my-navbar">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img src="assets/img/logo-white.png" alt="Stream UI Kit" style="width: 100px;">
-          </a>
-
-          <button class="navbar-toggler" type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarTogglerDemo"
-
-                  aria-controls="navbarTogglerDemo"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
           <div class="collapse navbar-collapse" id="navbarTogglerDemo">
-            <ul class="navbar-nav mt-2 mt-lg-0">
+            <ul class="navbar-nav nav-fill w-100 mx-auto mt-2 mt-lg-0" style="align-items: center">
               <li class="nav-item mr-4 mb-2 mb-lg-0">
-                <a class="nav-link active" href="index.html">Back to UI Kit</a>
-              </li>
-            </ul>
-
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-              <li class="nav-item mr-4 mb-2 mb-lg-0">
-                <a class="nav-link" href="home-page.html">Home</a>
-              </li>
-              <li class="nav-item mr-4 mb-2 mb-lg-0">
-                <a class="nav-link" href="services.html">Services</a>
-              </li>
-              <li class="nav-item dropdown mr-4 mb-2 mb-lg-0">
-                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  About <i class="fas fa-angle-down small ml-1"></i>
+                <a href="worldExpOWeekBook.pdf" class="navbarItems">
+                   O-Week Book
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item active" href="about-us.html">About Us</a>
-                  <a class="dropdown-item" href="about-me.html">About Me</a>
-                </div>
               </li>
               <li class="nav-item mr-4 mb-2 mb-lg-0">
-                <a class="nav-link" href="contacts.html">Contacts</a>
+                <a class="navbarItems" href="teams.html">
+                  Tour Groups
+                </a>
+			  <li class="nav-item mr-4 mb-2 mb-lg-0">
+				  <a class="navbarBrand" href="index.html">
+				  	<img src="globe2.png" height="50" alt="Globe"/>
+          </a>
+			  </li>	  
+              </li>
+              <li class="nav-item mr-4 mb-2 mb-lg-0 dropdown">
+                <a class="navbarItems dropdown-toggle" href="#" data-toggle="dropdown">
+                  Information
+                </a>
+				 	<div id="info" class="dropdown-menu">
+					<a class="dropdown-item" href="about-oweek.html">About O-Week</a>
+					<a class="dropdown-item" href="about-lovett.html">About Lovett</a>
+					<a class="dropdown-item" href="about.html">Travel Information</a>
+		    	    </div>
+              </li>
+			  <li class="nav-item mr-4 mb-2 mb-lg-0">
+                <a class="navbarItems" href="contact.html">
+                  Contact
+                </a>
               </li>
             </ul>
-            <div>
-              <a class="btn btn-primary" data-toggle="modal" href="#callUsModal" href="#!">
-                <i class="fas fa-phone-square mr-1"></i> Call Me
-              </a>
-            </div>
           </div>
         </div>
       </nav>
