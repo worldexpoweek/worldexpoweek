@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <!-- Head -->
+  <head>
+    <title>Groups</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="author" content="Minh Le">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Web Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Playfair+Display:400,700%7COpen+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/css/bootstrap.css">
+
+    <!-- Components Vendor Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.css">
+
+    <!-- Theme Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+    <!-- MapBox -->
+<!--     <script src='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' /> -->
+
+  </head>
+  <!-- End Head -->
+
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Navbar -->
+      <nav class="js-navbar-scroll fixed-top navbar-expand-lg navbar-transparent my-navbar">
+        <div class="container-fluid">
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo">
+            <ul class="navbar-nav nav-fill w-100 mx-auto mt-2 mt-lg-0" style="align-items: center">
+              <li class="nav-item mr-4 mb-2 mb-lg-0">
+                <a href="worldExpOWeekBook.pdf" class="navbarItems">
+                   O-Week Book
+                </a>
+              </li>
+              <li class="nav-item mr-4 mb-2 mb-lg-0">
+                <a class="navbarItems" href="teams.html">
+                  Tour Groups
+                </a>
+        <li class="nav-item mr-4 mb-2 mb-lg-0">
+          <a class="navbarBrand" href="index.html">
+            <img src="globe2.png" height="50" alt="Globe"/>
+          </a>
+        </li>   
+              </li>
+              <li class="nav-item mr-4 mb-2 mb-lg-0 dropdown">
+                <a class="navbarItems dropdown-toggle" href="#" data-toggle="dropdown">
+                  Information
+                </a>
+          <div id="info" class="dropdown-menu">
+          <a class="dropdown-item" href="about-oweek.html">About O-Week</a>
+          <a class="dropdown-item" href="about-lovett.html">About Lovett</a>
+          <a class="dropdown-item" href="about.html">Travel Information</a>
+              </div>
+              </li>
+        <li class="nav-item mr-4 mb-2 mb-lg-0">
+                <a class="navbarItems" href="contact.html">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+    </header>
+
+    <!-- Coords -->
+    <section class="u-content-space">
+       <div class="container">
+        <header class="w-md-50 mx-auto text-center mb-6">
+            <h2 class="h1 font-weight-light mb-1">2018 World Leaders</h2>
+            <p>Meet your Oweek Coordinators.</p>
+        </header>
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-10 text-center mb-7 mb-md-0">
+                  <img class="u-box-shadow-lg img-fluid img-thumbnail mt-1" src="coordinators.jpg" alt="OweekCoords">
+          </div>
+       </div>
+     </div>
+    </section>
+
+    <!-- Map -->
+    <section class="u-content-space" >
+      <div class="container">
+        <header class="w-md-50 mx-auto text-center mb-6">
+          <h2 class="h1 font-weight-light mb-1">World Map</h2>
+          <p>Meet your groups. 
+          Click on the marker to reveal the tour group and click on the profile to visit their page</p>
+        </header>
+
+        <div class="container">
+          
+          <div class="col-sm-12 col-md-12 text-center mb-7 mb-md-0 " >
+            <img class="u-box-shadow-lg img-fluid img-thumbnail mt-1 u-overlay" src="worldmap-01.png" alt="Map">
+            <!-- Promo Content -->
+            <div class="container u-overlay__inner u-ver-center u-content-space">
+              <!-- <div class="row justify-content-center"> -->
+              <!-- <div class="container"> -->
+                <!-- row 1 -->
+                <div class="row justify-content-center">
+                  <!-- Coordinate 1,1 -->
+                  <!-- Invisble block template -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 1,2 -->
+                  <!-- normal block template -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="u-link text-center d-block" tabindex="0" role="button"
+                         data-toggle="popover"
+                         data-trigger="focus"
+                         data-container="body"
+                         data-placement="top"
+                         title="GROUP NAME"
+                         data-html ="true"
+                         data-content="<a href='teams/arcDeToaster.html'><img src='coordinators.jpg' height=100% width=100%></a>">
+                          <i class="fas fa-map-marker-alt" style="color: red;"></i>
+                      </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 1,3 -->
+                  <!-- invisible -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 1,4 -->
+                  <!-- normal block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="u-link text-center d-block" tabindex="0" role="button"
+                         data-toggle="popover"
+                         data-trigger="focus"
+                         data-container="body"
+                         data-placement="top"
+                         title="GROUP NAME"
+                         data-html ="true"
+                         data-content="<a href='teams/arcDeToaster.html'><img src='coordinators.jpg' height=100% width=100%></a>">
+                          <i class="fas fa-map-marker-alt" style="color: red;"></i>
+                      </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 1,5 -->
+                  <!-- invisible -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 1,6 -->
+                  <!-- normal block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="u-link text-center d-block" tabindex="0" role="button"
+                         data-toggle="popover"
+                         data-trigger="focus"
+                         data-container="body"
+                         data-placement="top"
+                         title="GROUP NAME"
+                         data-html ="true"
+                         data-content="<a href='teams/arcDeToaster.html'><img src='coordinators.jpg' height=100% width=100%></a>">
+                          <i class="fas fa-map-marker-alt" style="color: red;"></i>
+                      </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 1,7 -->
+                  <!-- invisible -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 1,8 -->
+                  <!-- invisible -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 1,9 -->
+                  <!-- normal block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="u-link text-center d-block" tabindex="0" role="button"
+                         data-toggle="popover"
+                         data-trigger="focus"
+                         data-container="body"
+                         data-placement="top"
+                         title="GROUP NAME"
+                         data-html ="true"
+                         data-content="<a href='teams/arcDeToaster.html'><img src='coordinators.jpg' height=100% width=100%></a>">
+                          <i class="fas fa-map-marker-alt" style="color: red;"></i>
+                      </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 1,10 -->
+                  <!-- invisible -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 1,11 -->
+                  <!-- normal block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="u-link text-center d-block" tabindex="0" role="button"
+                         data-toggle="popover"
+                         data-trigger="focus"
+                         data-container="body"
+                         data-placement="top"
+                         title="GROUP NAME"
+                         data-html ="true"
+                         data-content="<a href='teams/arcDeToaster.html'><img src='coordinators.jpg' height=100% width=100%></a>">
+                          <i class="fas fa-map-marker-alt" style="color: red;"></i>
+                      </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 1,12 -->
+                  <!-- invisible -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- row 2 -->
+                <div class="row justify-content-center">
+                  <!-- 2,1 -->
+                  <!-- Invisble block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 2,2 -->
+                  <!-- Invisble block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 2,3 -->
+                  <!-- normal block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="u-link text-center d-block" tabindex="0" role="button"
+                         data-toggle="popover"
+                         data-trigger="focus"
+                         data-container="body"
+                         data-placement="top"
+                         title="GROUP NAME"
+                         data-html ="true"
+                         data-content="<a href='teams/arcDeToaster.html'><img src='coordinators.jpg' height=100% width=100%></a>">
+                          <i class="fas fa-map-marker-alt" style="color: red;"></i>
+                      </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 2,4 -->
+                  <!-- Invisble block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>           
+                  <!-- 2,5 -->
+                  <!-- normal block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="u-link text-center d-block" tabindex="0" role="button"
+                         data-toggle="popover"
+                         data-trigger="focus"
+                         data-container="body"
+                         data-placement="top"
+                         title="GROUP NAME"
+                         data-html ="true"
+                         data-content="<a href='teams/arcDeToaster.html'><img src='coordinators.jpg' height=100% width=100%></a>">
+                          <i class="fas fa-map-marker-alt" style="color: red;"></i>
+                      </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 2,6 -->
+                  <!-- Invisble block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>  
+                  <!-- 2,7 -->
+                  <!-- normal block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="u-link text-center d-block" tabindex="0" role="button"
+                         data-toggle="popover"
+                         data-trigger="focus"
+                         data-container="body"
+                         data-placement="top"
+                         title="GROUP NAME"
+                         data-html ="true"
+                         data-content="<a href='teams/arcDeToaster.html'><img src='coordinators.jpg' height=100% width=100%></a>">
+                          <i class="fas fa-map-marker-alt" style="color: red;"></i>
+                      </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 2,8 -->
+                  <!-- invisible -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 2,9 -->
+                  <!-- Invisble block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>  
+                  <!-- 2,10 -->
+                  <!-- normal block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="u-link text-center d-block" tabindex="0" role="button"
+                         data-toggle="popover"
+                         data-trigger="focus"
+                         data-container="body"
+                         data-placement="top"
+                         title="GROUP NAME"
+                         data-html ="true"
+                         data-content="<a href='teams/arcDeToaster.html'><img src='coordinators.jpg' height=100% width=100%></a>">
+                          <i class="fas fa-map-marker-alt" style="color: red;"></i>
+                      </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 2,11 -->
+                  <!-- Invisble block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>  
+                  <!-- 2,12 -->
+                  <!-- invisible -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- row 3 -->
+                <div class="row justify-content-center">
+                  <!-- 3,1 -->
+                  <!-- Invisble block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 3,2 -->
+                  <!-- Invisble block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 3,3 -->
+                  <!-- Invisble block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 3,4 -->
+                  <!-- normal block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="u-link text-center d-block" tabindex="0" role="button"
+                         data-toggle="popover"
+                         data-trigger="focus"
+                         data-container="body"
+                         data-placement="top"
+                         title="GROUP NAME"
+                         data-html ="true"
+                         data-content="<a href='teams/arcDeToaster.html'><img src='coordinators.jpg' height=100% width=100%></a>">
+                          <i class="fas fa-map-marker-alt" style="color: red;"></i>
+                      </a>
+                      </li>
+                    </ul>
+                  </div>         
+                  <!-- 3,5 -->
+                  <!-- Invisble block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 3,6 -->
+                  <!-- normal block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="u-link text-center d-block" tabindex="0" role="button"
+                         data-toggle="popover"
+                         data-trigger="focus"
+                         data-container="body"
+                         data-placement="top"
+                         title="GROUP NAME"
+                         data-html ="true"
+                         data-content="<a href='teams/arcDeToaster.html'><img src='coordinators.jpg' height=100% width=100%></a>">
+                          <i class="fas fa-map-marker-alt" style="color: red;"></i>
+                      </a>
+                      </li>
+                    </ul>
+                  </div> 
+                  <!-- 3,7 -->
+                  <!-- Invisble block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div> 
+                  <!-- 3,8 -->
+                  <!-- normal block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="u-link text-center d-block" tabindex="0" role="button"
+                         data-toggle="popover"
+                         data-trigger="focus"
+                         data-container="body"
+                         data-placement="top"
+                         title="GROUP NAME"
+                         data-html ="true"
+                         data-content="<a href='teams/arcDeToaster.html'><img src='coordinators.jpg' height=100% width=100%></a>">
+                          <i class="fas fa-map-marker-alt" style="color: red;"></i>
+                      </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 3,9 -->
+                  <!-- Invisble block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div> 
+                  <!-- 3,10 -->
+                  <!-- normal block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="u-link text-center d-block" tabindex="0" role="button"
+                         data-toggle="popover"
+                         data-trigger="focus"
+                         data-container="body"
+                         data-placement="top"
+                         title="GROUP NAME"
+                         data-html ="true"
+                         data-content="<a href='teams/arcDeToaster.html'><img src='coordinators.jpg' height=100% width=100%></a>">
+                          <i class="fas fa-map-marker-alt" style="color: red;"></i>
+                      </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 3,11 -->
+                  <!-- Invisble block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>  
+                  <!-- 3,12 -->
+                  <!-- invisible -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- row 4 -->
+                <div class="row justify-content-center">
+                  <!-- 4,1 -->
+                  <!-- Invisble block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 4,2 -->
+                  <!-- Invisble block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 4,3 -->
+                  <!-- Invisble block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 4,4 -->
+                  <!-- normal block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="u-link text-center d-block" tabindex="0" role="button"
+                         data-toggle="popover"
+                         data-trigger="focus"
+                         data-container="body"
+                         data-placement="top"
+                         title="GROUP NAME"
+                         data-html ="true"
+                         data-content="<a href='teams/arcDeToaster.html'><img src='coordinators.jpg' height=100% width=100%></a>">
+                          <i class="fas fa-map-marker-alt" style="color: red;"></i>
+                      </a>
+                      </li>
+                    </ul>
+                  </div>   
+                  <!-- 4,5 -->
+                  <!-- Invisble block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 4,6 -->
+                  <!-- Invisble block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 4,7 -->
+                  <!-- normal block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="u-link text-center d-block" tabindex="0" role="button"
+                         data-toggle="popover"
+                         data-trigger="focus"
+                         data-container="body"
+                         data-placement="top"
+                         title="GROUP NAME"
+                         data-html ="true"
+                         data-content="<a href='teams/arcDeToaster.html'><img src='coordinators.jpg' height=100% width=100%></a>">
+                          <i class="fas fa-map-marker-alt" style="color: red;"></i>
+                      </a>
+                      </li>
+                    </ul>
+                  </div> 
+                  <!-- 4,8 -->
+                  <!-- invisible -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 4,9 -->
+                  <!-- Invisble block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 4,10 -->
+                  <!-- invisible -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 4,11 -->
+                  <!-- normal block -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="u-link text-center d-block" tabindex="0" role="button"
+                         data-toggle="popover"
+                         data-trigger="focus"
+                         data-container="body"
+                         data-placement="top"
+                         title="GROUP NAME"
+                         data-html ="true"
+                         data-content="<a href='teams/arcDeToaster.html'><img src='coordinators.jpg' height=100% width=100%></a>">
+                          <i class="fas fa-map-marker-alt" style="color: red;"></i>
+                      </a>
+                      </li>
+                    </ul>
+                  </div> 
+                  <!-- 4,12 -->
+                  <!-- invisible -->
+                  <div class="col-xs-1 mb-lg-5 mt-lg-5 mr-lg-4 ml-lg-4">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                      <li class="list-inline-item mx-2">
+                        <a class="text-white">
+                          <i class="fas fa-map-marker-alt" style="opacity: 0;"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>              <!-- </div> -->
+
+
+            </div>
+            <!-- End Promo Content -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+          
+
+<!--             <div class="row justify-content-center">
+              <div class="col-lg-12">
+                <div id='map' style='width: 100%; height: 600px;'></div>
+                <script>
+                  mapboxgl.accessToken = 'pk.eyJ1Ijoid29ybGRleHBvd2VlayIsImEiOiJjampidG1oYWYwazhhM3BwZWNtN3JteDExIn0.jM9Wc1pOlYCV8K4VFVtr2A';
+                  var map = new mapboxgl.Map({
+                    container: 'map',
+                    style: 'mapbox://styles/worldexpoweek/cjjbug6w56fwq2sp3d5k8t80k'
+                  });
+                </script>
+              </div>
+            </div> 
+-->
+
+      <!--                 
+                  <div class="row">
+                    <div class="col-6 col-md-4 col-lg-1 mb-7 mb-lg-0">
+                      <a class="text-center d-block" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                        <img class="img-fluid d-block mb-2" src="mapmarker.png" alt="Htmlstream">
+                        Tooltip on top
+                      </a>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-1 mb-7 mb-lg-0">
+                      <a class="text-center d-block" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                        <img class="img-fluid d-block mb-2" src="mapmarker.png" alt="Htmlstream">
+                        Tooltip on right
+                      </a>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-1 mb-7 mb-lg-0">
+                      <a class="text-center d-block" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                        <img class="img-fluid d-block mb-2" src="mapmarker.png" alt="Htmlstream">
+                        Tooltip on bottom
+                      </a>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-1 mb-7 mb-lg-0">
+                      <a class="text-center d-block" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+                        <img class="img-fluid d-block mb-2" src="mapmarker.png" alt="Htmlstream">
+                        Tooltip on left
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 col-md-4 col-lg-1 mb-7 mb-lg-0">
+                      <a class="text-center d-block" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                        <img class="img-fluid d-block mb-2" src="mapmarker.png" alt="Htmlstream">
+                        Tooltip on top
+                      </a>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-1 mb-7 mb-lg-0">
+                      <a class="text-center d-block" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                        <img class="img-fluid d-block mb-2" src="mapmarker.png" alt="Htmlstream">
+                        Tooltip on right
+                      </a>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-1 mb-7 mb-lg-0">
+                      <a class="text-center d-block" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                        <img class="img-fluid d-block mb-2" src="mapmarker.png" alt="Htmlstream">
+                        Tooltip on bottom
+                      </a>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-1 mb-7 mb-lg-0">
+                      <a class="text-center d-block" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+                        <img class="img-fluid d-block mb-2" src="mapmarker.png" alt="Htmlstream">
+                        Tooltip on left
+                      </a>
+                    </div>
+                  </div> -->
+
+                  <!-- <div class="col-12">
+                    <div class="text-center">
+                      <p class="text-uppercase u-letter-spacing-sm mb-0">Clean and Fully Responsive Template</p>
+                      <h1 class="display-sm-4 display-lg-3 mb-3">We are <span class="js-display-typing"></span></h1>
+                      <a class="btn btn-primary" href="services.html">
+                        Learn More <i class="fas fa-arrow-alt-circle-right ml-2"></i>
+                      </a>
+                    </div>
+                  </div> -->
+
+                <!-- </div> -->
+
+
+    <!-- Footer -->
+    <footer class="bg-dark py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 text-center text-md-left mb-3 mb-md-0">
+            <small class="text-white">&copy; Lovett College 2018. 6310 Main Street, Houston, TX 77005<br>Created by Stephanie Yang, Henry Creamer, and Minh Le</small>
+          </div>
+
+          <div class="col-md-4 align-self-center">
+            <ul class="list-inline text-center text-md-right mb-0">
+              <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="Facebook">
+                <a class="text-white" target="_blank" href="https://www.facebook.com/groups/lovettcollege/">
+                  <i class="fab fa-3x fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- JAVASCRIPTS (Load javascripts at bottom, this will reduce page load time) -->
+    <!-- Global Vendor -->
+    <script src="assets/vendors/jquery.min.js"></script>
+    <script src="assets/vendors/jquery.migrate.min.js"></script>
+    <script src="assets/vendors/popper.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Components Vendor  -->
+    <script src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vendors/jquery.parallax.js"></script>
+
+    <!-- Theme Settings and Calls -->
+    <script src="assets/js/global.js"></script>
+
+    <!-- Theme Components and Settings -->
+    <script src="assets/js/vendors/parallax.js"></script>
+    <!-- END JAVASCRIPTS -->
+
+  </body>
+  <!-- End Body -->
+</html>
