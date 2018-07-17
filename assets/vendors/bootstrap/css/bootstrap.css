@@ -5165,18 +5165,15 @@ button.close {
 }
 
 .tooltip.show {
-  opacity: 1;
+  opacity: 10 !important;
 }
 
 .tooltip .arrow {
   position: absolute;
-  background-color:#000066 !important;
   display: block;
   width: 0.8rem;
   height: 0.4rem;
 }
-
-.blue-tooltip + .tooltip.top > .tooltip-arrow {background-color: ##000066;}
 
 .tooltip .arrow::before {
   position: absolute;
