@@ -25,11 +25,11 @@ body {
 }
 
 a {
-  color: #59287a;
+  color: #000066;
 }
 
 a:hover {
-  color: #59287a;
+  color: #fab333;
 }
 
 a:focus {
@@ -46,10 +46,24 @@ figure {
 
 hr {
   border-color: #e6e7e9;
+  padding-bottom: 6.25rem;
 }
 
 [role=button] {
   cursor: pointer;
+}
+
+.text-navy {
+  color: #000066;
+}
+
+.text-gray {
+  color: rgba(0, 0, 0, 0.40);
+}
+
+.text-yellow {
+  color: #fab633;
+  opacity: 0.8;
 }
 
 /*------------------------------------
@@ -65,21 +79,21 @@ h1, h2, h3, h4, h5, h6 {
 ------------------------------------*/
 ::-moz-selection {
   color: #fff;
-  background-color: #59287a;
+  background-color: #fab;
 }
 
 ::selection {
   color: #fff;
-  background-color: #59287a;
+  background-color: #fab;
 }
 
 .bg-primary ::-moz-selection {
-  color: #59287a;
+  color: #fab;
   background-color: #fff;
 }
 
 .bg-primary ::selection {
-  color: #59287a;
+  color: #fab;
   background-color: #fff;
 }
 
@@ -497,7 +511,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-tabs--v1 .nav-link.active,
 .nav-tabs--v1 .nav-item.show .nav-link {
-  border-top-color: #59287a;
+  border-top-color: transparent;
 }
 
 .nav-tabs--v1 .nav-link.active:hover, .nav-tabs--v1 .nav-link.active:focus,
@@ -505,7 +519,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-tabs--v1 .nav-item.show .nav-link:focus {
   border-left-color: #e6e7e9;
   border-right-color: #e6e7e9;
-  border-top-color: #59287a;
+  border-top-color: transparent;
 }
 
 .tab-content--v1 {
@@ -576,6 +590,58 @@ h1, h2, h3, h4, h5, h6 {
 .u-blockquote-v2__image {
   width: 3.75rem;
   height: 3.75rem;
+}
+
+/*----------------------------------
+  Countdown Clock
+------------------------------------*/
+.clockdiv{
+  font-family: 'righteous', sans-serif;
+  color: #fff;
+  display: block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 100px;
+  position: relative;
+  padding: 1.875rem 1.875rem 1.875rem 3.75rem;
+  width: 100%;
+}
+
+.clockdiv::before {
+  content: "";
+  position: absolute;
+  width: 3.75rem;
+  margin: -1.5625rem 0 0 -2.5rem;
+  color: #59287a;
+  font-size: 3.75rem;
+}
+.clockdiv::after {
+  content: "";
+  position: absolute;
+  bottom: -1.875rem;
+  left: 3.75rem;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 30px 0 0;
+  border-color: #fff transparent transparent transparent;
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.1));
+}
+
+.clockdiv > div{
+  padding: 10px;
+  border-radius: 3px;
+  background: #00BF96;
+  display: inline-block;
+}
+
+.clockdiv  span{
+  padding: 15px;
+  border-radius: 3px;
+  background: #00816A;
+  display: inline-block;
+  text-align-last: center
 }
 
 /*------------------------------------
@@ -1152,16 +1218,16 @@ h1, h2, h3, h4, h5, h6 {
   Spaces
 ------------------------------------*/
 .u-content-space {
-  padding-top: 6.25rem;
-  padding-bottom: 6.25rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .u-content-space-top {
-  padding-top: 6.25rem;
+  padding-top: 3rem;
 }
 
 .u-content-space-bottom {
-  padding-bottom: 6.25rem;
+  padding-bottom: 3rem;
 }
 
 /*----------------------------------
@@ -1290,25 +1356,25 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navbar styles */
 .my-navbar {
-	background-color: rgba(0,0,66,0.2);
-	display: flex !important;
-	flex-direction: 'row' !important;
-	justify-content: space-evenly !important;
-	align-items: center !important;
-	padding: .2rem;
-	text-align: center;
+  background-color: rgba(0,0,66,0.2);
+  display: flex !important;
+  flex-direction: 'row' !important;
+  justify-content: space-evenly !important;
+  align-items: center !important;
+  padding: .2rem;
+  text-align: center;
   text-transform: uppercase;
-	font-family: 'righteous', sans-serif;
-	letter-spacing: 2px;
+  font-family: 'righteous', sans-serif;
+  letter-spacing: 2px;
 }
 
 .navbarItems {
-	color:white !important;
-	font-size: 1rem!important;
-	font-weight: 400;
-	text-transform: uppercase;
-	cursor: pointer;
-	font-family: "righteous", sans-serif;
+  color:white !important;
+  font-size: 1rem!important;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "righteous", sans-serif;
 }
 
 .navbarItems:hover {
@@ -1316,18 +1382,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbarBrand {
-	color:white !important;
-	font-size: 2.5rem !important;
-	font-weight: 400;
-	text-transform: uppercase;
-	cursor: pointer;
-	font-family: "righteous",sans-serif;
+  color:white !important;
+  font-size: 2.5rem !important;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "righteous",sans-serif;
   position: relative;
   top: -5px;
+  left: 11px;
 }
 
 .dropdown-menu {
-	background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.2);
   border-style: transparent !important;
   font-size: 0.8rem;
 }
@@ -1338,9 +1405,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Card styles */
 .card-mat-panel,.card-mat {
-	-webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  	-moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .card-mat-panel {
@@ -1515,21 +1582,4 @@ h1, h2, h3, h4, h5, h6 {
 
 .waves-block {
   display: block; }
-
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding: 300px;
-  height: 0;
-  right: 135px;
-  overflow: hidden; }
-  .video-container.no-controls {
-    padding-top: 0; }
-  .video-container iframe, .video-container object, .video-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-
 
