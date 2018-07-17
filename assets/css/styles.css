@@ -1516,4 +1516,20 @@ h1, h2, h3, h4, h5, h6 {
 .waves-block {
   display: block; }
 
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding: 300px;
+  height: 0;
+  right: 135px;
+  overflow: hidden; }
+  .video-container.no-controls {
+    padding-top: 0; }
+  .video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
 
