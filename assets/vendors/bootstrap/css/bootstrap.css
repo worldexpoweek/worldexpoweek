@@ -5170,10 +5170,13 @@ button.close {
 
 .tooltip .arrow {
   position: absolute;
+  background-color:#000066 !important;
   display: block;
   width: 0.8rem;
   height: 0.4rem;
 }
+
+.blue-tooltip + .tooltip.top > .tooltip-arrow {background-color: ##000066;}
 
 .tooltip .arrow::before {
   position: absolute;
@@ -5249,6 +5252,13 @@ button.close {
   text-align: center;
   background-color: #000066;
   border-radius: 0.25rem;
+}
+
+.tooltip.top .tooltip-inner {
+    background-color:#000066 !important;
+}
+.tooltip.top .tooltip-arrow {
+      border-top-color: #000066 !important;
 }
 
 .popover {
