@@ -2,7 +2,7 @@
 <html lang="en" class="no-js">
   <!-- Head -->
   <head>
-    <title>Stream - Bootstrap 4 UI Kit</title>
+    <title>Lovett World ExpO-Week</title>
 
     <!-- Meta -->
     <meta charset="utf-8"/>
@@ -124,14 +124,14 @@
       <!-- End Navbar -->
 
       <!-- Promo Block -->
-      <section class="js-parallax u-promo-block" style="background-image: url(assets/img-temp/promo/img1.jpg);">
+      <section class="js-parallax u-promo-block" style="background-image: url(backgrounds/hannah_tyler_bergen_fjords.jpg);">
         <!-- Promo Content -->
         <div class="container text-white u-ver-center u-content-space">
           <div class="row justify-content-center">
             <div class="col-12">
               <div class="text-center">
-                <p class="h6 text-uppercase u-letter-spacing-sm mb-0">A beautiful Open Source Bootstrap 4 UI Kit!</p>
-                <h1 class="display-2 display-md-1 u-font-accent font-weight-light">Stream <span class="d-none d-md-inline-block">-</span> UI Kit</h1>
+                <p class="h6 text-uppercase u-letter-spacing-sm mb-0"> Lovett College O-Week 2018</p>
+                <h1 class="display-2 display-md-1 u-font-accent font-weight-light">World ExpO-Week</h1>
                 <a href="#js-scroll-to-section" class="text-uppercase text-white font-weight-bold u-font-size-75">Discover now</a>
                 <span class="fa fa-angle-down d-block"></span>
               </div>
@@ -141,54 +141,37 @@
         <!-- End Promo Content -->
       </section>
       <!-- End Promo Block -->
+      <!-- Countdown Clock -->
+            <div id="clockdiv">
+          <div>
+            <span class="days"></span>
+            <div class="h5 text-uppercase u-letter-spacing-sm mb-0">Days</div>
+          </div>
+          <div>
+            <span class="hours"></span>
+            <div class="h5 text-uppercase u-letter-spacing-sm mb-0">Hours</div>
+          </div>
+          <div>
+            <span class="minutes"></span>
+            <div class="h5 text-uppercase u-letter-spacing-sm mb-0">Minutes</div>
+          </div>
+          <div>
+            <span class="seconds"></span>
+            <div class="h5 text-uppercase u-letter-spacing-sm mb-0">Seconds</div>
+          </div>
+        </div>
     </header>
     <!-- End Header -->
+
 
     <main role="main">
       <!-- About -->
       <section class="demo-about-section u-content-space-bottom">
         <div class="container">
-          <!-- Author Avatar -->
-          <article class="mb-5">
-            <div class="d-flex align-items-center justify-content-center text-uppercase font-weight-bold small">
-              <span class="mr-3">Product By </span>
-              <img class="rounded-circle mr-3 mb-1" src="assets/img-temp/ava/img1.jpg" width="35" alt="Author Image">
-              <a href="https://htmlstream.com">Htmlstream</a>
-            </div>
-          </article>
-          <!-- End Author Avatar -->
-
           <!-- About Content -->
           <article class="w-md-75 mx-auto">
-            <p class="lead font-weight-normal text-center mb-4">Stream UI Kit is beautiful Open Source Bootstrap 4 UI Kit under MIT license. The UI Kit comes with 5 beautiful complete pages and includes over 20 reusable and customizable UI Blocks. It’s lightweight and only ~17kb when minified.</p>
-
-            <!-- Social Networks -->
-            <div class="d-flex justify-content-center">
-              <!-- Facebook Like -->
-              <div class="mr-2" style="margin-top: -5px !important;">
-                <div class="fb-like"
-                  data-href="http://facebook.com/htmlstream"
-                  data-layout="button_count"
-                  data-action="like"
-                  data-show-faces="false"
-                  data-size="small">
-                </div>
-              </div>
-              <!-- End Facebook Like -->
-
-              <!-- Twitter Follow -->
-              <div class="mr-2">
-                <a href="https://twitter.com/htmlstream" class="twitter-follow-button" data-show-count="true">@htmlstream</a>
-              </div>
-              <!-- End Twitter Follow -->
-
-              <!-- Github Star -->
-              <div class="d-none d-sm-block">
-                <a class="github-button" href="https://github.com/htmlstreamofficial/stream-ui-kit" data-show-count="true" aria-label="Star stream-ui-kit on GitHub">Star</a>
-              </div>
-              <!-- End Github Star -->
-            </div>
-            <!-- End Social Networks -->
+            <h2 class="h1 font-weight-light mb-1 text-center text-navy"> Mission Statement </h2>
+            <p class="lead font-weight-normal text-center mb-4">Our goal for Lovett O-Week 2018 is to build a community of accepting individuals with diverse cultures, perspectives, and backgrounds in which the New Students can find stability, opportunity, support, and compassion.  We hope for each New Student to come out of O-Week with at least one person they can relate to academically, socially, or culturally.  We aim to accomplish this by fostering open, genuine, and long-lasting relationships that encourage meaningful interactions between the New Students, Advisors, the Lovett Adult Team and the members of the greater Lovett and Rice community.  Our O-Week's goal is to help integrate the New Students into Rice in a way that gives them the comfort and the freedom to develop as individuals and to explore all aspects of Rice University both academically and socially.  At its core, Lovett can be a home for all students, and we hope O-Week brings together the people that make that possible.</p>
           </article>
           <!-- About Content -->
         </div>
@@ -2682,6 +2665,49 @@
         });
       });
       // Twitter Follow
+
+      // Countdown Clock
+      function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+var deadline = new Date('August 12, 2018');
+initializeClock('clockdiv', deadline);
     </script>
     <!-- End Demo Code Only -->
 

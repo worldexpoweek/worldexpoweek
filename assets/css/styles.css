@@ -25,11 +25,11 @@ body {
 }
 
 a {
-  color: #59287a;
+  color: #000066;
 }
 
 a:hover {
-  color: #59287a;
+  color: #fab333;
 }
 
 a:focus {
@@ -52,6 +52,10 @@ hr {
   cursor: pointer;
 }
 
+.text-navy {
+  color: #000066;
+}
+
 /*------------------------------------
   Headings
 ------------------------------------*/
@@ -65,12 +69,12 @@ h1, h2, h3, h4, h5, h6 {
 ------------------------------------*/
 ::-moz-selection {
   color: #fff;
-  background-color: #59287a;
+  background-color: #fab;
 }
 
 ::selection {
   color: #fff;
-  background-color: #59287a;
+  background-color: #fab;
 }
 
 .bg-primary ::-moz-selection {
@@ -497,7 +501,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-tabs--v1 .nav-link.active,
 .nav-tabs--v1 .nav-item.show .nav-link {
-  border-top-color: #59287a;
+  border-top-color: transparent;
 }
 
 .nav-tabs--v1 .nav-link.active:hover, .nav-tabs--v1 .nav-link.active:focus,
@@ -505,7 +509,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-tabs--v1 .nav-item.show .nav-link:focus {
   border-left-color: #e6e7e9;
   border-right-color: #e6e7e9;
-  border-top-color: #59287a;
+  border-top-color: transparent;
 }
 
 .tab-content--v1 {
@@ -576,6 +580,32 @@ h1, h2, h3, h4, h5, h6 {
 .u-blockquote-v2__image {
   width: 3.75rem;
   height: 3.75rem;
+}
+
+/*----------------------------------
+  Countdown Clock
+------------------------------------*/
+.clockdiv{
+  font-family: 'righteous', sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 100px;
+}
+
+.clockdiv > div{
+  padding: 10px;
+  border-radius: 3px;
+  background: #00BF96;
+  display: inline-block;
+}
+
+.clockdiv div > span{
+  padding: 15px;
+  border-radius: 3px;
+  background: #00816A;
+  display: inline-block;
 }
 
 /*------------------------------------
@@ -1290,25 +1320,25 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navbar styles */
 .my-navbar {
-	background-color: rgba(0,0,66,0.2);
-	display: flex !important;
-	flex-direction: 'row' !important;
-	justify-content: space-evenly !important;
-	align-items: center !important;
-	padding: .2rem;
-	text-align: center;
+  background-color: rgba(0,0,66,0.2);
+  display: flex !important;
+  flex-direction: 'row' !important;
+  justify-content: space-evenly !important;
+  align-items: center !important;
+  padding: .2rem;
+  text-align: center;
   text-transform: uppercase;
-	font-family: 'righteous', sans-serif;
-	letter-spacing: 2px;
+  font-family: 'righteous', sans-serif;
+  letter-spacing: 2px;
 }
 
 .navbarItems {
-	color:white !important;
-	font-size: 1rem!important;
-	font-weight: 400;
-	text-transform: uppercase;
-	cursor: pointer;
-	font-family: "righteous", sans-serif;
+  color:white !important;
+  font-size: 1rem!important;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "righteous", sans-serif;
 }
 
 .navbarItems:hover {
@@ -1316,18 +1346,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbarBrand {
-	color:white !important;
-	font-size: 2.5rem !important;
-	font-weight: 400;
-	text-transform: uppercase;
-	cursor: pointer;
-	font-family: "righteous",sans-serif;
+  color:white !important;
+  font-size: 2.5rem !important;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "righteous",sans-serif;
   position: relative;
   top: -5px;
 }
 
 .dropdown-menu {
-	background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.2);
   border-style: transparent !important;
   font-size: 0.8rem;
 }
@@ -1338,9 +1368,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Card styles */
 .card-mat-panel,.card-mat {
-	-webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  	-moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .card-mat-panel {

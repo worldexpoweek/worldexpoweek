@@ -60,7 +60,7 @@ $g-color-light-blue-300:                                        #8c98a4 !default
 $g-purple:                                                      #59287a !default;
 $g-cyan:                                                        #00dffc !default;
 $g-teal:                                                        #00c9a7 !default;
-$g-blue:                                                        #2972fa !default;
+$g-blue:                                                        #000066!default;
 $g-green:                                                       #0dd157 !default;
 $g-yellow:                                                      #fab633 !default;
 $g-red:                                                         #fb4143 !default;
@@ -87,8 +87,8 @@ $g-social-network-colors: map-merge((
 ), $g-social-network-colors);
 
 // Theme Colors
-$g-primary:                                                     $g-purple !default;
-$g-secondary:                                                   $g-teal !default;
+$g-primary:                                                     $g-blue !default;
+$g-secondary:                                                   $g-yellow !default;
 $g-success:                                                     $g-green !default;
 $g-info:                                                        $g-blue !default;
 $g-warning:                                                     $g-yellow !default;
@@ -444,7 +444,7 @@ $g-carousel-control-size:                                       2rem !default;
 
 $g-tooltip-max-width:                                           200px !default;
 $g-tooltip-color:                                               $g-white !default;
-$g-tooltip-bg:                                                  theme-color("primary") !default;
+$g-tooltip-bg:                                                  $g-blue !default;
 $g-tooltip-opacity:                                             1 !default;
 $g-tooltip-padding-y:                                           .5rem !default;
 $g-tooltip-padding-x:                                           1rem !default;
